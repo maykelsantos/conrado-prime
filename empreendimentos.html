@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Empreendimentos | Conrado Prime Imóveis</title>
+<meta name="description" content="Veja os lançamentos e prontos para morar da Conrado Prime Imóveis, com entrada, parcelas e renda mínima de cada um.">
+<meta name="theme-color" content="#191816">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="empreendimentos">
+<div id="header"></div>
+<main>
+  <section class="p-hero">
+    <div class="container">
+      <p class="eyebrow">Empreendimentos</p>
+      <h1>Encontre o <em>seu apê</em></h1>
+      <p>Lançamentos e prontos para morar. Filtre pela fase e pela renda da sua família.</p>
+    </div>
+    <div class="sky-wrap" data-skyline></div>
+  </section>
+  <section class="secao secao--creme" style="padding-top: 0">
+    <div class="container">
+      <div class="filtros">
+        <div class="chips" role="group" aria-label="Filtrar por fase">
+          <button class="chip" type="button" data-fase="todos" aria-pressed="true">Todos</button>
+          <button class="chip" type="button" data-fase="lancamento" aria-pressed="false">Lançamentos</button>
+          <button class="chip" type="button" data-fase="pronto" aria-pressed="false">Prontos para morar</button>
+          <button class="chip" type="button" data-fase="breve" aria-pressed="false">Vindo aí</button>
+        </div>
+        <form id="form-renda">
+          <label for="renda">Renda da família</label>
+          <span class="renda__campo"><span>R$</span><input id="renda" inputmode="numeric" placeholder="Ex.: 2500" autocomplete="off"></span>
+        </form>
+      </div>
+      <div class="lista-topo"><span>Resultado</span><b id="contagem"></b></div>
+      <p id="aviso-lista" hidden></p>
+      <div class="grade-cards" id="lista"></div>
+    </div>
+  </section>
+</main>
+<div id="footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
